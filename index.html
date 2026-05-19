@@ -175,18 +175,57 @@
   footer { padding: 2rem; text-align: center; font-size: 12px; color: var(--text3); font-family: 'DM Mono', monospace; border-top: 1px solid var(--border); }
 
   @media (max-width: 640px) {
-    .hero-inner { grid-template-columns: 1fr; }
-    .hero-card { display: none; }
+    /* Hero — stack vertically, show card below content */
+    .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .hero-card { width: 100%; max-width: 340px; margin: 0 auto; }
+    .hero-card-photo { height: 220px; }
+
+    /* Nav */
     nav { padding: 0 1rem; }
     .nav-links { display: none; }
+
+    /* Containers */
     .container { padding: 0 1.25rem; }
     .hero-inner { padding: 0 1.25rem; }
+
+    /* Contact */
     .contact-grid { grid-template-columns: 1fr; }
+
+    /* Working style */
     .style-item { flex-direction: column; gap: 0.4rem; }
     .style-heading { min-width: unset; }
-    .exp-item { grid-template-columns: 1fr; }
-    .exp-dates { text-align: left; }
+
+    /* Experience — dates move above content, not float beside */
+    .exp-item { 
+      grid-template-columns: 1fr; 
+      display: flex; 
+      flex-direction: column-reverse;
+    }
+    .exp-dates { 
+      text-align: left;
+      font-size: 11px;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+      padding-top: 0;
+    }
+
+    /* Proof grid single column */
     .proof-grid { grid-template-columns: 1fr; }
+
+    /* Metrics row stacked */
+    .metrics-row { grid-template-columns: 1fr 1fr; }
+
+    /* Snapshot grid single column */
+    .snapshot-grid { grid-template-columns: 1fr; }
+
+    /* Quotes single column */
+    .quotes-grid { grid-template-columns: 1fr; }
+
+    /* Skills single column */
+    .skills-grid { grid-template-columns: 1fr; }
+
+    /* Fit grid single column */
+    .fit-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -211,8 +250,8 @@
 <section id="hero">
   <div class="hero-inner">
     <div>
-      <p style="font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3);margin-bottom:0.75rem;">Robert Saucedo</p>
-      <h1>B2B Cloud Marketing &amp; GTM Program Leader</h1>
+      <p style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:600;color:var(--text);margin-bottom:0.2rem;letter-spacing:-0.01em;line-height:1.2;">Robert Saucedo</p>
+      <h1 style="font-size:clamp(1.4rem,3.5vw,2.2rem);color:var(--text2);font-weight:400;margin-bottom:1.25rem;">B2B Cloud Marketing &amp; GTM Program Leader</h1>
       <p style="font-size:1.05rem;color:var(--text2);max-width:540px;margin-bottom:1.5rem;line-height:1.7;">
         I turn cloud strategy into measurable revenue — and 14 years at Microsoft taught me exactly how. From GTM campaign execution and demand generation to Power BI dashboards and 451% quota attainment, I build programs that show up in the numbers.
       </p>
