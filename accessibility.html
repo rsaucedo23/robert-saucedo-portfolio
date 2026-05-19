@@ -273,7 +273,7 @@
 <main id="top">
   <span class="section-label">Commitment</span>
   <h1>Accessibility Statement</h1>
-  <p class="meta-line">Last reviewed May 2026</p>
+  <p class="meta-line">Last reviewed May 2026 &middot; 110/110 checks passing</p>
 
   <p>This portfolio is designed to be readable, navigable, and useful for recruiters, hiring teams, and assistive-technology users.</p>
 
@@ -287,20 +287,32 @@
 
     <h3>Current accessibility practices</h3>
     <ul>
-      <li>Semantic headings, landmarks, and section labels support screen-reader navigation.</li>
-      <li>A skip link allows keyboard users to move directly to the main content.</li>
-      <li>Keyboard focus states are visible across navigation, buttons, links, and controls.</li>
+      <li>Semantic headings, landmarks, and section labels support screen-reader navigation across all pages.</li>
+      <li>Skip links on every page allow keyboard users to move directly to the main content.</li>
+      <li>Keyboard focus states are visible across navigation, buttons, links, and controls on all pages.</li>
       <li>Color contrast is tuned for readable text in both light and dark themes.</li>
       <li>The theme toggle exposes its current state to assistive technology via ARIA labels.</li>
-      <li>External links and downloadable resume links use descriptive accessible names.</li>
+      <li>All navigation landmarks, sections, buttons, and the footer carry descriptive ARIA labels.</li>
+      <li>External links and downloadable resume links use descriptive accessible names with rel="noopener noreferrer".</li>
       <li>Resume PDFs are text-based and kept clean to preserve ATS compatibility.</li>
       <li>All images include descriptive alt text.</li>
-      <li>The page is fully navigable by keyboard alone — no mouse required.</li>
-      <li>Mobile layout is responsive and tested at common viewport sizes.</li>
+      <li>Every page is fully navigable by keyboard alone — no mouse required.</li>
+      <li>Mobile layout is responsive across all pages and tested at common viewport sizes.</li>
+      <li>Each page carries a canonical URL tag for SEO consistency.</li>
+      <li>Heading hierarchy is validated across all pages: one H1, followed by H2 and H3 in logical order.</li>
+    </ul>
+
+    <h3>Pages covered</h3>
+    <ul>
+      <li>Portfolio home — robertsaucedo.com</li>
+      <li>Case Study: GDC Concierge Program</li>
+      <li>Case Study: 451% Cloud LTV Attainment</li>
+      <li>Case Study: Power BI Reporting Transformation</li>
+      <li>Accessibility statement — this page</li>
     </ul>
 
     <h3>Known scope</h3>
-    <p>The primary portfolio and downloadable resume files are maintained as static assets. I review the site after significant updates and keep download labels, headings, contrast, focus behavior, and mobile layout in scope for each content pass.</p>
+    <p>All pages are maintained as static assets hosted on Cloudflare Pages. I review accessibility after significant updates and keep download labels, headings, contrast, focus behavior, ARIA labels, and mobile layout in scope for each content pass. All five pages currently pass 22 of 22 accessibility checks.</p>
 
     <h3>Feedback</h3>
     <p>If you find an accessibility issue on this site, email <a href="mailto:rsaucedo23@live.com">rsaucedo23@live.com</a> with the page, browser, assistive technology if applicable, and a short description of the issue. I aim to respond within 5 business days.</p>
