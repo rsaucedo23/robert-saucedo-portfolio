@@ -199,21 +199,21 @@
     line-height: 1.75;
     margin-bottom: 1rem;
   }
-  ul {
+  main ul {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
     margin-bottom: 1rem;
   }
-  ul li {
+  main ul li {
     font-size: 14.5px;
     color: var(--text2);
     padding-left: 1.2rem;
     position: relative;
     line-height: 1.6;
   }
-  ul li::before {
+  main ul li::before {
     content: '→';
     position: absolute;
     left: 0;
@@ -221,6 +221,10 @@
     font-size: 11px;
     top: 4px;
   }
+  /* Nav list reset */
+  nav ul { flex-direction: row; gap: 0; margin: 0; }
+  nav ul li { padding-left: 0; font-size: inherit; color: inherit; }
+  nav ul li::before { display: none; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
   a:focus-visible, button:focus-visible {
